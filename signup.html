@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense tracker Sign Up page</title>
+    <link rel="stylesheet" href="CSS/Signup.css">
+</head>
+<body>
+    
+    <nav>
+        <div class="head">
+        <a href="#"><img src="11254560.png"></a>
+        <h1>Expense Tracker</h1>
+        </div>
+    </nav>
+    
+    <div class="log">
+       <center><h1>Sign up</h1></center><br>
+       <form onsubmit="validateForm(); return false;">
+        <div class="form-sig">
+            <input type="text" id="username">
+            <label>Username</label>
+            <div id="userError" class="error"></div>
+        </div>
+
+
+        <div class="form-sig">
+            <input type="email" id="email">
+            <label>Email</label>
+            <div id="emailError" class="error"></div>
+        </div>
+
+         <div class="form-sig">
+            <input type="password" id="password">
+            <label>Password</label>
+            <div id="passError" class="error"></div>
+        </div>
+
+         <div class="form-sig">
+            <input type="password" id="confirmpassword">
+            <label>Confirm Password</label>
+            <div id="confirmError" class="error"></div>
+        </div>
+
+       
+
+        <button onclick="validateForm()">Sign Up</button>
+
+       </form>
+       
+    </div>
+
+
+<script src="JS/Signup.js"></script>
+</body>
+</html>

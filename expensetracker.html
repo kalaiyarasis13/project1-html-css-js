@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="CSS/expensetracker.css">
+</head>
+<body>
+    <nav>
+        <div class="head">
+        <a href="#"><img src="11254560.png"></a>
+        <h1>Expense Tracker</h1>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="main">
+            <h2>Income And Expense Tracker</h2>
+            <h4>Your Balance</h4>
+            <h2 id="balance">රු 0.00</h2>
+
+            <div class="incomexpense">
+                <!--income-->
+                <div class="inc">
+                    <h4>Income</h4>
+                    <p id="inc-amt" class="amt plus">රු 0.00</p>
+                </div>
+                <!--expense-->
+                <div class="exp">
+                    <h4>Expense</h4>
+                    <p id="exp-amt" class="amt miuns">රු 0.00</p>
+                </div>
+            </div>
+
+            <form action="#" id="form">
+                <div class="from-contorl">
+                    <input type="text" name="description" id="desc">
+                    <label for="description">Description</label>
+                </div>
+
+                <div class="from-contorl">
+                    <input type="number" name="amount" id="amt">
+                    <label for="description">Amount</label>
+                </div>
+
+                <button id="add-expanse" class="btn" type="submit">Add Transaction</button>
+
+            </form>
+        </div>
+        <div class="transaction">
+            <center><h3>Transaction History</h3></center>
+            
+            <ul class="trans" id="trans"></ul>
+                
+        </div>
+    </div>
+<script src="JS/expensetracker.js"></script>
+</body>
+</html>

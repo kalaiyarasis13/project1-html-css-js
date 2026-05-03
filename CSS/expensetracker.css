@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(251, 158, 211, 0.25);
+    
+    
+}
+
+nav {
+    position: fixed;
+    z-index: 1;
+    padding: 25px 60px;
+}
+
+nav a img {
+    width: 45px;
+}
+
+.head {
+    display : flex;
+}
+
+.container {
+    width: 1000px;
+    height: 600px;
+    background-color: white;
+    margin: 25px;
+    box-shadow: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    position: absolute;
+    left :50%;
+    top: 50%;
+    color: black;
+    transform: translate(-50%, -50%);
+    display: flex;
+     user-select: none;
+}
+
+
+.main {
+    background-color: rgb(240, 240, 240);
+    padding:20px;
+    border-radius: 5px;
+    flex: 1;
+    color: black;
+}
+
+.main h2, h4, h1 {
+    font-weight: 600;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.main h2 {
+    text-transform: UPPERCASE;
+    color: blue;
+}
+
+
+.incomexpense {
+    display: flex;
+    padding: 5px;
+    gap: 50px;
+}
+
+.incomexpense div{
+    text-align: center;
+    text-transform: UPPERCASE;
+    padding: 20px;
+    font-size: 18px;
+    flex: 1;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.incomexpense div p {
+    font-size: 22px;
+}
+
+.incomexpense div.inc {
+    background-color: rgb(106, 244, 106);
+}
+
+.incomexpense div.exp {
+    background-color: red;
+}
+
+
+
+.transaction {
+    flex: 1;
+}
+
+
+form .from-contorl {
+    position: relative;
+    height: 50px;
+    margin-bottom: 16px;
+}
+
+.from-contorl input {
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    outline: none;
+    border: none;
+    color: #333;
+    font-size: 1rem;
+    border-radius: 4px;
+    padding: 0 20px;
+}
+
+.from-contorl label {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    color: #8c8c8c;
+    pointer-events: none;
+    font-size: 1rem;
+    transform: translateY(-50%);
+    transition: all 0.2s ease;
+}
+
+.from-contorl input:is(:focus, :valid) ~ label {
+    font-size: 1rem;
+    transform: translateY(-130%); 
+}      
+
+form button {
+    width: 100%;
+    padding: 16px 0;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 4px;
+    background: blue;
+    margin: 25px 0 10px;
+    transition: 0.1s ease;
+}
+
+form button:hover {
+    background: rgba(30, 23, 249, 0.5);
+    color: black;
+}
+
+.transaction {
+    padding: 20px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.transaction h3 {
+    text-transform: UPPERCASE;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d1d1d1;
+    margin-bottom: 10px;
+}
+
+.trans {
+    list-style-type: none;
+}
+
+.trans li {
+    background-color: #fff;
+    color: #333;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 10px;
+    margin: 10px 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.trans li.inc {
+    border-left: 5px solid rgb(106, 244, 106);
+}
+
+.trans li.exp {
+    border-left: 5px solid red; 
+}
+
+.btn-del {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-weight: 600;
+    color: #fff;
+    background-color: red;
+    border: none;
+    font-size: 18px;
+    line-height: 20px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.trans li:hover .btn-del {
+    opacity: 1;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: blue;
+    border-radius: 8px;
+}
