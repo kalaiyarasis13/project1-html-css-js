@@ -6,7 +6,7 @@ const confirmPassword = document.getElementById("confirmpassword");
 //validation
 userName.addEventListener("input", () => {
     if (userName.value.length <= 4) {
-        document.getElementById("userError").innerText = "Username mut be at least 3 characters";
+        document.getElementById("userError").innerText = "Username must be at least 3 characters";
     }
     else {
         document.getElementById("userError").innerText = "Looks good";

@@ -32,15 +32,15 @@ nav a img {
     height: 600px;
     background-color: white;
     margin: 25px;
-    box-shadow: rgba(0, 0, 0, 0.7);
-    border-radius: 5px;
+    box-shadow: 8px 10px 8px 10px #f38d8d;
+    border-radius: 10px;
     position: absolute;
     left :50%;
     top: 50%;
     color: black;
     transform: translate(-50%, -50%);
     display: flex;
-     user-select: none;
+    user-select: none;
 }
 
 
@@ -225,4 +225,33 @@ form button:hover {
 ::-webkit-scrollbar-thumb {
     background-color: blue;
     border-radius: 8px;
+}
+
+
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .incomexpense {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        padding: 20px;
+        display: flex;
+    }
+
+    nav, .container {
+        padding: 5px;
+    }
+
+     nav a img h1 {
+        width: 20px;
+ 
+    }
 }
